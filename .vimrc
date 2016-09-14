@@ -29,7 +29,7 @@ nnoremap * *N
 
 " underline all occurences of word under cursor
 function EscapeString(str)
-    return substitute(a:str, '[^a-zA-z0-9-<>]/\\', '', "g")
+    return substitute(a:str, '[^a-zA-z0-9-<>]', '', "g")
 "    return a:str
 endfunction
 function UnderlineCurrentWord()
@@ -66,4 +66,5 @@ autocmd TabEnter * if winnr('$') == 1 | Filetree
 " enables mouse
 set mouse=a
 
-
+" map w to ^w
+nmap w <C-w>
