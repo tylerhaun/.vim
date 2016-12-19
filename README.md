@@ -8,5 +8,5 @@ Contains livescript syntax highlighting
 ## Usage
 
 ```
-cat "source ~/.vim/.vimrc" >> ~/.vimrc
+echo "source ~/.vim/.vimrc" >> ~/.vimrc
 ```

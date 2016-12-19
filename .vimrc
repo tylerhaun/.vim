@@ -56,12 +56,12 @@ let g:netrw_liststyle=3
 let g:netrw_browse_split=3
 
 " opens the file tree to project_base directory 
-let project_base = expand('%:p:h')
-command Filetree Ve expand('%:p:h') | vertical resize 30 | exec "normal \<C-w>\<C-w>"
+"let project_base = expand('%:p:h')
+"command Filetree Ve expand('%:p:h') | vertical resize 30 | exec "normal \<C-w>\<C-w>"
 
 " opens file tree when vim opens and when new tab gets created
-autocmd VimEnter * vs | Explore | vertical resize 30 | exec "normal \<C-w>\<C-w>"
-autocmd TabEnter * if winnr('$') == 1 | Filetree
+"autocmd VimEnter * vs | Explore | vertical resize 30 | exec "normal \<C-w>\<C-w>"
+"autocmd TabEnter * if winnr('$') == 1 | Filetree
 
 " enables mouse
 set mouse=a
