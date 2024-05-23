@@ -1,3 +1,5 @@
+source ~/.vim/.vimrcvundle
+
 set nu
 set tabstop=4
 set expandtab
@@ -28,6 +30,7 @@ set whichwrap+=<,>,h,l,[,]
 nnoremap * *N
 
 " underline all occurences of word under cursor
+highlight Underlined cterm=underline ctermfg=lightblue
 function EscapeString(str)
     return substitute(a:str, '[^a-zA-z0-9-<>]', '', "g")
 "    return a:str
@@ -67,4 +70,15 @@ let g:netrw_browse_split=3
 set mouse=a
 
 " map w to ^w
-nmap w <C-w>
+" nmap w <C-w>
+
+" enable jshint
+" set runtimepath+=~/.vim/bundle/jshint2.vim/
+
+se autoindent
+
+se fdm=indent
+se foldlevelstart=99
+
+syntax on
+
